@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>包装项目分享 · 三维包装结构</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111a24'/%3E%3Ctext x='16' y='23' font-size='16' text-anchor='middle' fill='%23e0b060' font-family='SimHei'%3E盒%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+<style>
+body { background: #0b1118; }
+.share-wrap { max-width: 1100px; margin: 0 auto; padding: 40px 24px 60px; }
+.share-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; }
+.share-head h1 { font-family: SimHei, sans-serif; font-size: 26px; color: #eef6f8; }
+.share-head p { color: #7f93a6; margin: 6px 0 0; }
+.share-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 18px; }
+.share-card { background: #121c26; border: 1px solid #223140; border-radius: 10px; padding: 18px; }
+.share-card h3 { font-family: SimHei, sans-serif; font-size: 14px; margin-bottom: 12px; color: #e6eef4; }
+.share-card canvas { width: 100%; height: auto; background: #0a1118; border-radius: 8px; }
+.share-meta { color: #9fb2c2; font-size: 12.5px; line-height: 2.1; }
+.share-meta b { color: #eef6f8; font-weight: normal; }
+.share-badge { display: inline-block; border: 1px solid #2c4a44; background: #122b28; color: #8fe0cf; font-size: 11px; padding: 3px 9px; border-radius: 12px; }
+@media (max-width: 800px) { .share-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="share-wrap">
+  <div class="share-head"><div><h1 id="share-title">包装项目</h1><p id="share-sub">只读分享</p></div><span class="share-badge">客户预览</span></div>
+  <div class="share-grid">
+    <div class="share-card"><h3>三维预览</h3><canvas id="share3d" width="720" height="460"></canvas></div>
+    <div class="share-card"><h3>规格与评估</h3><div class="share-meta" id="share-meta"></div></div>
+  </div>
+</div>
+<script src="js/box3d.js"></script>
+<script src="js/share.js"></script>
+</body>
+</html>
